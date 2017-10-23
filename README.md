@@ -5,8 +5,9 @@ Following [this excellent tutorial](https://blog.nrwl.io/using-ngupgrade-like-a-
 
 This works great except for if you want to host your app anywhere but root.
 
-Simply changing the following lines of .angular-cli.json to add a base tag to your index.html file.
+Simply changing the following lines of .angular-cli.json to change the baseHref
 
+```
 "defaults": {
     "styleExt": "css",
     "component": {
@@ -38,5 +39,5 @@ Steps to reproduce the issue:
  * ```npm install```
  * ```ng serve```
  * View it working normally
- * Change the .angular-cli.json file per above instructions
+ * Change the .angular-cli.json file per above instructions (change / to /sub/)
  * See it break.
