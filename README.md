@@ -7,10 +7,12 @@ This works great except for if you want to host your app anywhere but root.
 
 Simply changing the following lines of .angular-cli.json to add a base tag to your index.html file.
 
-```
 "defaults": {
     "styleExt": "css",
     "component": {
+    },
+    "build": {
+      "baseHref": "/"
     }
   }
 ```
